@@ -1,0 +1,59 @@
+// importar bootstrap
+@import '../bootstrap-5.3.2/scss/bootstrap.scss';
+
+// importando nuestros propios estilos
+//@import '_variables.scss';
+@import 'variables';
+@import 'mixins';
+
+// fuentes
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Roboto:wght@400;700&display=swap');
+
+// clases
+body {
+    font-family: $fuente-parrafos;
+}
+
+h1, h2, h3 {
+    font-family: $fuente-titulos;
+} 
+
+.bg-body-tertiary {
+    background-color: $color-rojo-traslucido !important;
+}
+.btn-primary {
+    background-color: $color-rojo;
+    border: none;
+    &:hover {
+        background-color: $color-negro;
+        transform: scale(110%);
+    }
+}
+.card {
+    border-color: $color-rojo;
+    margin-bottom: 40px;
+}
+.caja {
+    background-color: $color-rojo;
+}
+.carousel-item {
+    height: 300px;
+    img {
+        object-fit: cover;
+        height: 300px;
+    }
+}
+footer {
+    background-color: $color-negro;
+    color: $color-blanco;
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+    }
+    .btn-link {
+        color: $color-blanco;
+        &:hover {
+            color: $color-rojo;
+        }
+    }
+}
